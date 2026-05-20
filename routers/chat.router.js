@@ -5,7 +5,7 @@ import rateLimit from 'express-rate-limit';
 const router = express.Router();
 const limiter = rateLimit({
   windowMs: 1 * 60 * 1000,
-  max: 1, 
+  max: 5, 
   message: {
     success: false,
     message: "Too many requests, please try again later",
